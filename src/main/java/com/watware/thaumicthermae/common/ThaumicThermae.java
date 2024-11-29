@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.watware.thaumicthermae.common;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,17 +10,20 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = MyMod.MODID, version = Tags.VERSION, name = "MyMod", acceptedMinecraftVersions = "[1.7.10]")
-public class MyMod {
+@Mod(
+    modid = Tags.MODID,
+    version = Tags.VERSION,
+    name = "ThaumicThermae",
+    acceptedMinecraftVersions = "[1.7.10]",
+    dependencies = "required-after:Thaumcraft@[4.1.1.11,);required-after:gadomancy")
+public class ThaumicThermae {
+    public static final Logger LOG = LogManager.getLogger(Tags.MODID);
 
-    public static final String MODID = "mymodid";
-    public static final Logger LOG = LogManager.getLogger(MODID);
-
-    @SidedProxy(clientSide = "com.myname.mymodid.ClientProxy", serverSide = "com.myname.mymodid.CommonProxy")
+    @SidedProxy(clientSide = "com.watware.thaumicthermae.client.ClientProxy", serverSide = "com.watware.thaumicthermae.common.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler
-    // preInit "Run before anything else. Read your config, create blocks, items, etc, and register them with the
+    // preInit "Run before anything else. Read your config, create blocks, items, etc., and register them with the
     // GameRegistry." (Remove if not needed)
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);

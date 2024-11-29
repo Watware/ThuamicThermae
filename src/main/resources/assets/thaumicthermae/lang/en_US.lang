@@ -1,0 +1,7 @@
+thaumicthermae.golem.sanitizecore=Sanitize
+
+tc.research_name.CORESANITIZE=Golem Core: Sanitize
+tc.research_text.CORESANITIZE=The Gift of Traianus
+tc.research_page.CORESANITIZE.1=Having rubbed the Sanitizing Soap for two hours, you realized that it's too stupid for a thaumaturge to do such thing by yourself, so you created this core to make your golem help you to use the sanitizing soap.<BR>Golem fitted with this core will fetch a bar of sanitizing soap from the attached inventory, walking up to its master to help its master use the Sanitizing Soap automatically. Multiple golems can use mutiple soap at the same time.<BR>Golems haven't got a pair of skillful hands like you which can apply soap through armor, so golems won't help you to apply soap until you remove your armor.<BR>To minimize waste, they will only act when you are immersed in Purifying Fluid and have a Warp Ward effect.
+tc.research_page.CORESANITIZE.2=Just like how you manually use soap, the success rate of golems using soap is not 100%. To improve the success rate you can apply the Order Upgrade to the golem, althrough the golem needs more time to apply the soap carefully; Applying the Entropy Upgrade can increase the speed but decrease the success rate.<BR>Due to the purification attribute of silverwood, the Silverwood Golem can provide additional success rate.
+

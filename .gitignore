@@ -1,3 +1,6 @@
+/libs/
+/decompiled/
+
 .gradle
 .settings
 /.idea/
